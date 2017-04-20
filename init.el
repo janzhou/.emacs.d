@@ -48,3 +48,10 @@
   :ensure t
   :demand
   :pin melpa-stable)
+
+(defun sh (name)
+  "Create a shell buffer named NAME."
+  (interactive "sName: ")
+  (setq name (concat "$" name))
+  (eshell)
+  (rename-buffer name))
