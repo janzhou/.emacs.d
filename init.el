@@ -53,5 +53,7 @@
   "Create a shell buffer named NAME."
   (interactive "sName: ")
   (setq name (concat "$" name))
-  (eshell)
-  (rename-buffer name))
+  (if (get-buffer name)
+      (switch-to-buffer name)
+    (eshell)
+    (rename-buffer name)))
