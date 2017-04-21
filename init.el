@@ -49,6 +49,10 @@
   :demand
   :pin melpa-stable)
 
+(use-package magit
+  :ensure t
+  :pin melpa-stable)
+
 (defun sh (name)
   "Create a shell buffer named NAME."
   (interactive "sName: ")
