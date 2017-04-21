@@ -39,6 +39,11 @@
   (package-install 'use-package))
 (require 'use-package)
 
+(use-package solarized-theme
+  :ensure t
+  :config 
+  (load-theme 'solarized-light t))
+
 (use-package evil
   :ensure t
   :config (evil-mode 1)
