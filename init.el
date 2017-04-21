@@ -23,6 +23,8 @@
 
 ;; global auto reload
 (global-auto-revert-mode t)
+(global-linum-mode t)
+(setq linum-format "%4d ")
 
 ;; the package manager
 (require 'package)
