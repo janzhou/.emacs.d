@@ -56,7 +56,7 @@
 (defun sh (name)
   "Create a shell buffer named NAME."
   (interactive "sName: ")
-  (setq name (concat "$" name))
+  (setq name (concat name "$"))
   (if (get-buffer name)
       (switch-to-buffer name)
     (eshell)
