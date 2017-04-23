@@ -69,3 +69,14 @@
       (switch-to-buffer name)
     (eshell)
     (rename-buffer name)))
+
+(use-package chinese-pyim
+  :ensure t
+  :config
+  (use-package chinese-pyim-wbdict
+    :ensure t
+    :config (chinese-pyim-wbdict-gbk-enable))
+  (setq default-input-method "chinese-pyim")
+  (setq pyim-default-scheme 'wubi)
+  (setq pyim-page-tooltip 'popup)
+  (setq pyim-page-length 5))
