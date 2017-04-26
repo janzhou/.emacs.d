@@ -84,3 +84,19 @@
 (use-package hyde
   :ensure t
   :pin melpa)
+
+(use-package multi-term
+  :ensure t
+  :bind (("C-c t" . multi-term)
+         ("C-c \"" . multi-term-dedicated-toggle))
+  :config
+  (setq multi-term-program (getenv "SHELL")
+        multi-term-buffer-name "term"
+        multi-term-dedicated-select-after-open-p t)
+  (add-hook 'term-mode-hook
+            (lambda ()
+              (add-to-list 'term-bind-key-alist '("M-[" . multi-term-prev))
+              (add-to-list 'term-bind-key-alist '("M-]" . multi-term-next))
+              ;; conflict with yasnippet
+              (yas-minor-mode -1)
+              (company-mode -1))))
