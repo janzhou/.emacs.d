@@ -25,3 +25,5 @@
 (load-file "~/.emacs.d/plugins/git.el")
 (load-file "~/.emacs.d/plugins/jekyll.el")
 (load-file "~/.emacs.d/plugins/shell.el")
+(load-file "~/.emacs.d/plugins/neotree.el")
+(load-file "~/.emacs.d/plugins/markdown.el")
