@@ -15,3 +15,11 @@
       (switch-to-buffer name)
     (eshell)
     (rename-buffer name)))
+
+(if (eq system-type 'windows-nt)
+    (use-package powershell
+      :ensure t
+      :bind (("C-c t" . powershell))
+      )
+  )
+
