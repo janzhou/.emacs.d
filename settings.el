@@ -27,3 +27,8 @@
 (global-auto-revert-mode t)
 ;; (global-linum-mode t)
 ;; (setq linum-format "%4d ")
+
+(set-default-font "Consolas")
+(set-fontset-font "fontset-default"  
+                  'gb18030' ("Microsoft Yahei" . "unicode-bmp"))
+(set-face-attribute 'default nil :height 120)
