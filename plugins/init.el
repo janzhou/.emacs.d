@@ -29,3 +29,4 @@
 ;; (load-file "~/.emacs.d/plugins/markdown.el")
 (load-file "~/.emacs.d/plugins/winum.el")
 (load-file "~/.emacs.d/plugins/diff.el")
+(load-file "~/.emacs.d/plugins/cron.el")
