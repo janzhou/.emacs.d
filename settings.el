@@ -32,3 +32,5 @@
 (set-fontset-font "fontset-default"  
                   'gb18030' ("Microsoft Yahei" . "unicode-bmp"))
 (set-face-attribute 'default nil :height 120)
+
+(setq default-directory (concat (getenv "HOME") "/"))
