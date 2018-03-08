@@ -3,6 +3,6 @@
   :demand
   :config
   (setq
-   ensime-sbt-command "/usr/bin/sbt"
-   sbt:program-name "/usr/bin/sbt.bat")
+   ensime-sbt-command "~/.sbt/bin/sbt"
+   sbt:program-name "~/.sbt/bin/sbt.bat")
   :pin melpa-stable)
