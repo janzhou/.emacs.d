@@ -33,3 +33,6 @@
 (setq clean-buffer-list-kill-never-regexps
       (append '("^\\*EMMS Playlist\\*.*$")
               clean-buffer-list-kill-never-regexps-init))
+
+
+(provide 'cron-plugin)

@@ -23,3 +23,4 @@
       )
   )
 
+(provide 'shell-plugin)

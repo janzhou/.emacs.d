@@ -16,3 +16,5 @@
           map))
   :config
   (winum-mode))
+
+(provide 'windows-plugin)

@@ -1,3 +1,5 @@
+(require 'vim-plugin)
+
 (use-package neotree
   :ensure t
   :bind (("<f2>" . neotree-toggle))
@@ -18,3 +20,15 @@
     (kbd "q")   'neotree-hide
     (kbd "l")   'neotree-enter
     ))
+
+(use-package helm
+  :bind (("M-x" . helm-M-x)
+         ("M-<f5>" . helm-find-files)
+         ([f10] . helm-buffers-list)
+         ([S-f10] . helm-recentf)))
+
+(use-package projectile
+  :bind-keymap
+  ("C-c p" . projectile-command-map))
+
+(provide 'files-plugin)

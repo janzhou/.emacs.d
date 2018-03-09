@@ -1,3 +1,26 @@
+(load-theme 'tango-dark t)
+
+(require 'package)
+(setq
+ package-archives '(("gnu" . "http://elpa.gnu.org/packages/")
+                    ("org" . "http://orgmode.org/elpa/")
+                    ("melpa" . "http://melpa.org/packages/")
+                    ("melpa-stable" . "http://stable.melpa.org/packages/"))
+ package-archive-priorities '(("melpa-stable" . 1)))
+
+(package-initialize)
+(when (not package-archive-contents)
+  (package-refresh-contents)
+  (package-install 'use-package))
+(require 'use-package)
+
+(use-package auto-package-update
+  :ensure t
+  :config
+  (setq auto-package-update-delete-old-versions t
+        auto-package-update-interval 7)
+  (auto-package-update-maybe))
+
 (setq
  inhibit-startup-screen t
  create-lockfiles nil
@@ -34,3 +57,5 @@
 (set-face-attribute 'default nil :height 120)
 
 (setq default-directory (concat (getenv "HOME") "/"))
+
+(provide 'settings)
