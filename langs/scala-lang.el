@@ -6,3 +6,5 @@
    ensime-sbt-command "~/.sbt/bin/sbt"
    sbt:program-name "~/.sbt/bin/sbt.bat")
   :pin melpa-stable)
+
+(provide 'scala-lang)

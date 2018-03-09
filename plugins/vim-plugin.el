@@ -19,6 +19,8 @@
      "ff" 'ido-find-file
      "ft" 'neotree-toggle
      "fw" 'save-buffer
+     "pp" 'projectile-mode
+     "pf" 'projectile-find-file
      "gl" 'vc-print-root-log
      "ga" 'vc-register
      "gg" 'vc-next-action
