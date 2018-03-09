@@ -1,5 +1,3 @@
-(require 'vim-plugin)
-
 (use-package neotree
   :ensure t
   :bind (("<f2>" . neotree-toggle))

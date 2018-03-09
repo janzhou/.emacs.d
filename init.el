@@ -11,8 +11,8 @@
 (require 'files-plugin)
 (require 'shell-plugin)
 (require 'vc-plugin)
-(require 'vim-plugin)
 (require 'windows-plugin)
+(require 'vim-plugin)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
