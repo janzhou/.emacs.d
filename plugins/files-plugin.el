@@ -19,14 +19,10 @@
     (kbd "l")   'neotree-enter
     ))
 
-(use-package helm
-  :bind (("M-x" . helm-M-x)
-         ("M-<f5>" . helm-find-files)
-         ([f10] . helm-buffers-list)
-         ([S-f10] . helm-recentf)))
+(use-package helm)
 
 (use-package projectile
-  :bind-keymap
-  ("C-c p" . projectile-command-map))
+  :config
+  (setq projectile-indexing-method 'alien))
 
 (provide 'files-plugin)

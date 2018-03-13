@@ -24,7 +24,11 @@
      "gl" 'vc-print-root-log
      "ga" 'vc-register
      "gg" 'vc-next-action
+     "gp" 'vc-pull
+     "gu" 'vc-push
      "te" 'eshell
+     "tp" 'powershell
+     "tt" 'multi-term
      )))
 
 (provide 'vim-plugin)
