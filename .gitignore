@@ -6,3 +6,4 @@ tramp
 .last-package-update-day
 .cache
 *.cache
+projectile-bookmarks.eld
