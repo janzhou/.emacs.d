@@ -16,5 +16,6 @@
 (require 'vim-plugin)
 
 (require 'scala-lang)
+(require 'rust-lang)
 (require 'markdown-lang)
 
