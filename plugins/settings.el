@@ -39,6 +39,7 @@
  c-basic-offset 4)
 
 ;; modes
+(xterm-mouse-mode)
 (electric-indent-mode 0)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
