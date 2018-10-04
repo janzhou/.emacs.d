@@ -33,3 +33,5 @@
   (add-hook 'rust-mode-hook 'my-rust-mode-hook)
   (add-hook 'rust-mode-hook #'racer-mode)
   )
+
+(provide 'rust-lang)

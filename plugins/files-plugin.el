@@ -21,8 +21,8 @@
 
 (use-package helm)
 
-(use-package projectile
-  :config
-  (setq projectile-indexing-method 'alien))
+;(use-package projectile
+;  :config
+;  (setq projectile-indexing-method 'alien))
 
 (provide 'files-plugin)
