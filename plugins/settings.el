@@ -59,4 +59,6 @@
 
 (setq default-directory (concat (getenv "HOME") "/"))
 
+(cua-mode t)
+
 (provide 'settings)
