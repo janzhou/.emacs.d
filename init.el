@@ -7,15 +7,5 @@
 (add-to-list 'load-path (expand-file-name (concat user-emacs-directory "plugins")))
 (add-to-list 'load-path (expand-file-name (concat user-emacs-directory "langs")))
 
-(require 'settings)
-(require 'cron-plugin)
-(require 'files-plugin)
-(require 'shell-plugin)
-(require 'vc-plugin)
-(require 'windows-plugin)
-(require 'vim-plugin)
-
-(require 'scala-lang)
-(require 'rust-lang)
-(require 'markdown-lang)
-
+(require 'init-plugin)
+(require 'init-lang)
