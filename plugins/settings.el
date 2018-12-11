@@ -1,4 +1,4 @@
-(load-theme 'tango-dark t)
+(load-theme 'tango t)
 
 (require 'package)
 (setq
